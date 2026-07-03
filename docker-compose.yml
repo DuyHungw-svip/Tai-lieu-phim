@@ -1,0 +1,7 @@
+services:
+  dramawave-downloader:
+    build: .
+    container_name: dramawave-downloader
+    ports:
+      - "3000:3000"
+    restart: always

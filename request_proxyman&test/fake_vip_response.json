@@ -1,0 +1,139 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "cash_balance": 9999,
+    "bonus_balance": 9999,
+    "vip_level": 1,
+    "vip_expire": 1893456000,
+    "vip_cooling_time": 0,
+    "auto_unlock": 1,
+    "save_msg": "",
+    "save_monthly_text": "Ước tính tiết kiệm {$187.2} mỗi tháng!",
+    "save_monthly": "",
+    "membership_product": {
+      "title": "",
+      "description": "",
+      "vip_saved": "",
+      "membership_type": "",
+      "watch_ad_times": 0,
+      "ad_units": null,
+      "grace_period_sku_id": "",
+      "is_grace_period": false,
+      "expire_days": 0,
+      "first_discount": "Giảm 16%"
+    },
+    "vip_used": true,
+    "show_subscript": false,
+    "coupons_count": "",
+    "show_coins": false,
+    "diamond_auto_unlock": 0,
+    "novel_auto_unlock": 1,
+    "diamond_balance": 0,
+    "point_balance": 0,
+    "show_vip_pro_enter": false,
+    "expire_membership_product": null,
+    "vip_benefits": [
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-ublock.png",
+        "title": "2000+ tập free",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-free.png",
+        "title": "Không quảng cáo",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-download.png",
+        "title": "Quyền truy cập tải xuống",
+        "type": "download"
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-1080.png",
+        "title": "Chất lượng HD 1080p",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-book-fill-color-Profile.png",
+        "title": "Truy cập tiểu thuyết",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/point-icon-1.png",
+        "title": "Thưởng Hàng Ngày",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-early.png",
+        "title": "VIP truy cập sớm",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/show/ic-vip.png",
+        "title": "Dịch vụ VIP",
+        "type": ""
+      }
+    ],
+    "show_vip_banner": true,
+    "my_list_vip_info": {
+      "is_show_enter": true,
+      "icon": "",
+      "show_red_dot": false,
+      "drama_tab_text": "Xem mọi phim không giới hạn",
+      "novel_tab_text": "Đọc tiểu thuyết không giới hạn",
+      "anime_tab_text": "Truy cập không giới hạn phim hoạt hình"
+    },
+    "member_benefits": [
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/pro/unlimited-viewing.png",
+        "title": "Mở khóa tất cả tập",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/pro/offline-download.png",
+        "title": "Quyền truy cập tải xuống",
+        "type": "download"
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/pro/ic-pip-pro-fill-color2.png",
+        "title": "Hình trong Hình",
+        "type": ""
+      },
+      {
+        "icon": "https://static-v1.mydramawave.com/icon/vip_center/pro/daily-points-reward.png",
+        "title": "Thưởng Hàng Ngày",
+        "type": ""
+      }
+    ],
+    "card_style": 0,
+    "button_desc": "Trở Thành VIP",
+    "title_desc": "Truy cập không giới hạn tất cả phim",
+    "my_list_new": [
+      {
+        "is_show_enter": true,
+        "icon": "https://static-v1.mydramawave.com/novel/landing-page/image/MTk1NzM0NjA3NTY1NjY4MzUyMA==.png",
+        "show_red_dot": true,
+        "tab_text": "Xem mọi phim không giới hạn",
+        "tab_url": "dramawave://dramawave.app/profile_member_center?from=my_list_drama",
+        "tab_type": 1
+      },
+      {
+        "is_show_enter": true,
+        "icon": "https://static-v1.mydramawave.com/novel/landing-page/image/MTk1NzM0NjA3NTY1NjY4MzUyMA==.png",
+        "show_red_dot": true,
+        "tab_text": "Đọc tiểu thuyết không giới hạn",
+        "tab_url": "dramawave://dramawave.app/profile_member_center?from=my_list_novel",
+        "tab_type": 2
+      },
+      {
+        "is_show_enter": true,
+        "icon": "https://static-v1.mydramawave.com/novel/landing-page/image/MTk1NzM0NjA3NTY1NjY4MzUyMA==.png",
+        "show_red_dot": true,
+        "tab_text": "Truy cập không giới hạn phim hoạt hình",
+        "tab_url": "dramawave://dramawave.app/profile_member_center?from=my_list_anime",
+        "tab_type": 4
+      }
+    ]
+  }
+}

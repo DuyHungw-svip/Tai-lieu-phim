@@ -1,0 +1,3284 @@
+
+=========================================
+ZIP: lognew1.proxymanlogv2
+=========================================
+
+[POST API] File: request_0_5817
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_10_5908
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_11_5910
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_12_5915
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_13_5918
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_14_5922
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_15_5925
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_16_5928
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_17_5930
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_18_5933
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_19_5936
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_1_5821
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_20_5940
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_2_5829
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_39_5825
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_3_5835
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_47_5844
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618145665232896","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.100","applicatio
+
+[POST API] File: request_4_5842
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_56_5869
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_57_5870
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_5_5845
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_60_5874
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_69_5890
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_6_5848
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_70_5891
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_74_5898
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_7_5872
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_82_5913
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618276951142400","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.100","applicatio
+
+[POST API] File: request_83_5917
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618283410370560","pay_request_data":{"pay_product_id":"com.dramato2.dj.vip.1yt","application_u
+
+[POST API] File: request_84_5920
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618289836044288","pay_request_data":{"pay_product_id":"com.dramato.dj.vip.1mtc","application_u
+
+[POST API] File: request_85_5924
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618296416907264","pay_request_data":{"pay_product_id":"com.dramato.dj.vip.1wtcc","application_
+
+[POST API] File: request_86_5929
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618302070829056","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.2000","applicati
+
+[POST API] File: request_87_5932
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618306659397632","pay_request_data":{"pay_product_id":"com.dramato.dj.coins.500","application_
+
+[POST API] File: request_88_5934
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618310748844032","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.1000","applicati
+
+[POST API] File: request_8_5880
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_9_5896
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+=========================================
+ZIP: moitailaiapp.proxymanlogv2
+=========================================
+
+[POST API] File: request_104_10421
+URL: https://api.mydramawave.com/dm-api/homepage/vip_hot_series
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"model_items":[{"type":"vipEarlyAccess","title":"Truy cập sớm","priority":4,"data":[{"key":"4TGAmJ6Y3s","cover
+
+[POST API] File: request_105_10424
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_114_10476
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_119_10482
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_122_10490
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_123_10502
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_124_10503
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_128_10515
+URL: https://api.mydramawave.com/dm-api/homepage/vip_hot_series
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"model_items":[{"type":"vipEarlyAccess","title":"Truy cập sớm","priority":4,"data":[{"key":"4TGAmJ6Y3s","cover
+
+[POST API] File: request_129_10524
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_130_10525
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_133_10536
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_139_10545
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_148_10556
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_14_10171
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Chiếm Hữu Điên Cuồng","weight":0,"deep_link":"dramawave://dramawa
+
+[POST API] File: request_153_10566
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_154_10565
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_159_10570
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_164_10572
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_174_10584
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_176_10590
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_180_10594
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_186_10615
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_193_10622
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_197_10627
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_203_10634
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_207_10639
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_214_10648
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_220_10653
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_222_10655
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_225_10661
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_231_10667
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_233_10669
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_239_10187
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_240_10206
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_241_10220
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_242_10232
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_243_10239
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":11,"report":11,"reported":0,"fail":0}}
+
+[POST API] File: request_244_10248
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_245_10276
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":10,"report":10,"reported":0,"fail":0}}
+
+[POST API] File: request_246_10292
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_247_10304
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_248_10316
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_249_10335
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_250_10364
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_251_10373
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_252_10376
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_253_10398
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_254_10407
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_255_10422
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_256_10433
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_257_10436
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_258_10440
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_259_10452
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":10,"report":10,"reported":0,"fail":0}}
+
+[POST API] File: request_260_10474
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_261_10484
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_262_10519
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_263_10541
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_264_10546
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_265_10552
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_266_10553
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_267_10563
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_268_10579
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_269_10589
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_270_10597
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_271_10601
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_272_10612
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_273_10621
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_274_10631
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_275_10643
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_276_10656
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_277_10658
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_278_10666
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_279_10672
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_27_10192
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_280_10681
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_29_10193
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_30_10191
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_31_10195
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_32_10196
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_39_10205
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_42_10217
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_43_10219
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_44_10221
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_49_10261
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_505_10511
+URL: https://sentry.mydramawave.com/api/2/envelope/?sentry_version=7&sentry_key=e6c3b3334cc13f3bfbc3f22fdc0e47d2&sentry_client=sentry.javascript.vue%2F10.32.1
+Response Code: 200
+Response Body (150 ký tự đầu): {}
+
+[POST API] File: request_58_10275
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_62_10286
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_64_10307
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_66_10327
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_74_10338
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_76_10349
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_7_10165
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_80_10357
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_85_10365
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_88_10368
+URL: https://api.mydramawave.com/dm-api/point/task/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_vip":false,"items":[{"task_type":"one_time","task_type_name":"Một lần","task_list":[{"task_id":1,"task_cod
+
+[POST API] File: request_92_10374
+URL: https://api.mydramawave.com/dm-api/homepage/rank
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"type":"","module_type":"most_trending_rank","module_name":"Xu hướng nhất","module_key":"","module_desc":"","s
+
+[POST API] File: request_9_10166
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+=========================================
+ZIP: moinhat1.proxymanlogv2
+=========================================
+
+[POST API] File: request_0_5817
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_1002_7886
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1006_8021
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1007_8030
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_100_7403
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_1010_8046
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1011_8054
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_101_7407
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_1020_8372
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1023_8375
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_1027_8386
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Mẹ Kế Con Chồng","weight":0,"deep_link":"dramawave://dramawave.ap
+
+[POST API] File: request_102_7427
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_1031_8393
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_103_7431
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_1042_8414
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1043_8415
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_1045_8420
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1046_8421
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_104_7455
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_1053_8439
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1054_8440
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1055_8445
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_1056_8447
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_105_7494
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_1068_8477
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_106_7498
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_1073_8485
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1077_8630
+URL: https://api.mydramawave.com/dm-api/content/comment/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":[{"id":15011152,"parent_id":0,"root_id":0,"item_type":1,"series_key":"2WNQrvybk4","episode_key":"82ZBT
+
+[POST API] File: request_1078_8631
+URL: https://api.mydramawave.com/dm-api/content/comment/data
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"series_comment_count":332,"episode_comment_count":2,"comment_activities":[{"url":"https://mydramawave.com/emb
+
+[POST API] File: request_107_7519
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_1085_8680
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1088_8697
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_108_7522
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_1090_8771
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_109_7554
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_10_5908
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_1102_8827
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1107_8834
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_1109_8838
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Mẹ Kế Con Chồng","weight":0,"deep_link":"dramawave://dramawave.ap
+
+[POST API] File: request_110_7592
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_1113_8842
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_111_7603
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_1124_8883
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1125_8884
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_1127_8886
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1128_8893
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_112_7616
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_1135_8901
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1136_8904
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1137_8905
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_113_7621
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_1147_8924
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_114_7640
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_1154_8940
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_115_7665
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_1160_8971
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1164_9095
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1168_9099
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_116_7690
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_1171_9104
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Trùm Mafia Và Nữ Sát Thủ","weight":0,"deep_link":"dramawave://dra
+
+[POST API] File: request_1175_9109
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_117_7693
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_1186_9134
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1187_9135
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_1189_9137
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_118_7711
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_1190_9138
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1197_9145
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_119_7720
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_11_5910
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_1206_9162
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1208_9164
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_120_7743
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_1210_9167
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_1213_9182
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_121_7751
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_1220_9202
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_1225_9260
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_122_7756
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_1231_9266
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_1232_9275
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Quyến Rũ Ông Bố Tây","weight":0,"deep_link":"dramawave://dramawav
+
+[POST API] File: request_1236_9280
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_123_7769
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_1247_9299
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_1248_9302
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_124_7803
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_1250_9308
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1251_9309
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1258_9327
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_1259_9330
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_125_7820
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_1260_9333
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_1261_9338
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_126_7830
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_1275_9372
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_127_7846
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_1281_9379
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_128_7865
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_129_7896
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_12_5915
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_130_7957
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_131_7968
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_132_7989
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_133_7998
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_134_8019
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_135_8028
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_136_8032
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_137_8042
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_138_8044
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_139_8065
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_13_5918
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_140_8069
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_141_8087
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_142_8099
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_143_8113
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_144_8136
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_145_8167
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_146_8205
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_147_8236
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_148_8276
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_149_8281
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_14_5922
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_150_8302
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_151_8309
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_152_8316
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_153_8325
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_154_8336
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_155_8342
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_156_8349
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_157_8400
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_158_8413
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_159_8427
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_15_5925
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_160_8446
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_161_8486
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_162_8546
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_163_8561
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_164_8578
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_165_8581
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_166_8593
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_167_8617
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_168_8641
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_169_8648
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_16_5928
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_170_8657
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_171_8670
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_172_8678
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_173_8694
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":14,"report":14,"reported":0,"fail":0}}
+
+[POST API] File: request_174_8696
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_175_8706
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_176_8731
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_177_8750
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_178_8768
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_179_8780
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_17_5930
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_180_8811
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_181_8837
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_182_8855
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_183_8888
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_184_8902
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_185_8916
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":15,"report":15,"reported":0,"fail":0}}
+
+[POST API] File: request_186_8942
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_187_8982
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_188_8984
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_189_9004
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_18_5933
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_190_9011
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_191_9032
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_192_9077
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_193_9088
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_194_9128
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_195_9147
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_196_9154
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_197_9161
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_198_9166
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_199_9185
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":14,"report":14,"reported":0,"fail":0}}
+
+[POST API] File: request_19_5936
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_1_5821
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_200_9212
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_201_9245
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_202_9248
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_203_9253
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_204_9290
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_205_9321
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_206_9336
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_207_9350
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":15,"report":15,"reported":0,"fail":0}}
+
+[POST API] File: request_208_9364
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_209_9376
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_20_5940
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_210_9415
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_211_9418
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_21_5949
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_22_5958
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_23_6154
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_24_6163
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_25_6170
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_26_6172
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_27_6173
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_28_6177
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_29_6181
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_2_5829
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_30_6217
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_31_6230
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_32_6235
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_33_6245
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_34_6253
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_35_6262
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_36_6267
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_37_6294
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_38_6318
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_39_6335
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_3_5835
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_40_6352
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_41_6367
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":14,"report":14,"reported":0,"fail":0}}
+
+[POST API] File: request_42_6396
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":11,"report":11,"reported":0,"fail":0}}
+
+[POST API] File: request_43_6443
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":10,"report":10,"reported":0,"fail":0}}
+
+[POST API] File: request_44_6454
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_45_6461
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_46_6477
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":11,"report":11,"reported":0,"fail":0}}
+
+[POST API] File: request_47_6506
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_48_6531
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_497_5825
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_49_6573
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_4_5842
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_505_5844
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618145665232896","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.100","applicatio
+
+[POST API] File: request_50_6584
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_514_5869
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_515_5870
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_518_5874
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_51_6608
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_527_5890
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_528_5891
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_52_6639
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_532_5898
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_53_6654
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_540_5913
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618276951142400","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.100","applicatio
+
+[POST API] File: request_541_5917
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618283410370560","pay_request_data":{"pay_product_id":"com.dramato2.dj.vip.1yt","application_u
+
+[POST API] File: request_542_5920
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618289836044288","pay_request_data":{"pay_product_id":"com.dramato.dj.vip.1mtc","application_u
+
+[POST API] File: request_543_5924
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618296416907264","pay_request_data":{"pay_product_id":"com.dramato.dj.vip.1wtcc","application_
+
+[POST API] File: request_544_5929
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618302070829056","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.2000","applicati
+
+[POST API] File: request_545_5932
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618306659397632","pay_request_data":{"pay_product_id":"com.dramato.dj.coins.500","application_
+
+[POST API] File: request_546_5934
+URL: https://api.mydramawave.com/dm-api/wallet/order/create
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"order_id":"2072618310748844032","pay_request_data":{"pay_product_id":"com.dramato.buzz.coins.1000","applicati
+
+[POST API] File: request_54_6671
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_559_6201
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_55_6695
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_562_6202
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_56_6709
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_572_6213
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_573_6216
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_576_6221
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_579_6225
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_57_6725
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_583_6237
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_58_6752
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_592_6272
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_596_6275
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_598_6279
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Bố Của Vị Hôn Phu Muốn Tôi","weight":0,"deep_link":"dramawave://d
+
+[POST API] File: request_59_6791
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_5_5845
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_602_6286
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_60_6805
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":10,"report":10,"reported":0,"fail":0}}
+
+[POST API] File: request_613_6311
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_614_6312
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_61_6823
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_620_6320
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_621_6321
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_624_6334
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_625_6336
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_626_6338
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_627_6345
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_62_6826
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_63_6835
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_640_6382
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_648_6390
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_64_6850
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_650_6441
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_658_6629
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_65_6859
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_661_6632
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_665_6638
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Trùm Mafia Và Nữ Sát Thủ","weight":0,"deep_link":"dramawave://dra
+
+[POST API] File: request_668_6642
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_66_6870
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":10,"report":10,"reported":0,"fail":0}}
+
+[POST API] File: request_67_6880
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_680_6672
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_681_6673
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_683_6676
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_684_6688
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_68_6902
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_691_6702
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_692_6704
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_693_6707
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_695_6715
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_69_6906
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_6_5848
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_70_6921
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_711_6750
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_714_6760
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_717_6795
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_71_6939
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_72_6947
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_732_6865
+URL: https://api.mydramawave.com/dm-api/content/comment/data
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"series_comment_count":332,"episode_comment_count":1,"comment_activities":[{"url":"https://mydramawave.com/emb
+
+[POST API] File: request_733_6864
+URL: https://api.mydramawave.com/dm-api/content/comment/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":[{"id":16325119,"parent_id":0,"root_id":0,"item_type":1,"series_key":"2WNQrvybk4","episode_key":"uPiSf
+
+[POST API] File: request_734_6876
+URL: https://api.mydramawave.com/dm-api/content/comment/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":[{"id":16325119,"parent_id":0,"root_id":0,"item_type":1,"series_key":"2WNQrvybk4","episode_key":"uPiSf
+
+[POST API] File: request_735_6877
+URL: https://api.mydramawave.com/dm-api/content/comment/data
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"series_comment_count":332,"episode_comment_count":1,"comment_activities":[{"url":"https://mydramawave.com/emb
+
+[POST API] File: request_736_6886
+URL: https://api.mydramawave.com/dm-api/content/comment/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":[{"id":14946403,"parent_id":0,"root_id":0,"item_type":1,"series_key":"2WNQrvybk4","episode_key":"OSsCy
+
+[POST API] File: request_737_6889
+URL: https://api.mydramawave.com/dm-api/content/comment/sub_list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":[{"id":14946367,"parent_id":14946365,"root_id":14946365,"item_type":2,"series_key":"2WNQrvybk4","episo
+
+[POST API] File: request_738_6890
+URL: https://api.mydramawave.com/dm-api/content/comment/sub_list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":[{"id":14966697,"parent_id":14946365,"root_id":14946365,"item_type":2,"series_key":"2WNQrvybk4","episo
+
+[POST API] File: request_73_6960
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_740_6927
+URL: https://api.mydramawave.com/dm-api/drama/follow
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_741_6928
+URL: https://api.mydramawave.com/dm-api/drama/follow
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_743_6949
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_744_6966
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_747_6975
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_74_6967
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_750_6990
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_751_6991
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_756_7001
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Bố Của Vị Hôn Phu Muốn Tôi","weight":0,"deep_link":"dramawave://d
+
+[POST API] File: request_75_6973
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_760_7010
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_76_6976
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_771_7025
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_773_7034
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_774_7042
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_775_7044
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_77_6983
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_782_7060
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_783_7063
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_784_7065
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_786_7069
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_78_6996
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_79_7046
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":14,"report":14,"reported":0,"fail":0}}
+
+[POST API] File: request_7_5872
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_803_7133
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_806_7141
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_807_7142
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_80_7062
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_819_7258
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_81_7074
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_821_7260
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_823_7262
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Mang Thai Với Vua Rồng","weight":0,"deep_link":"dramawave://drama
+
+[POST API] File: request_82_7082
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_837_7292
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_839_7296
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_83_7083
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_840_7298
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_841_7299
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_842_7300
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_849_7315
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_84_7099
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_850_7316
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_851_7318
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_854_7330
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_85_7112
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_867_7356
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_86_7132
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_872_7364
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_875_7394
+URL: https://api.mydramawave.com/dm-api/drama/unlock_episode
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":1000,"message":"Balance not enough"}
+
+[POST API] File: request_87_7148
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_884_7531
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_888_7535
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_88_7161
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+[POST API] File: request_890_7539
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Trùm Mafia Và Nữ Sát Thủ","weight":0,"deep_link":"dramawave://dra
+
+[POST API] File: request_894_7545
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_89_7181
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_8_5880
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_905_7567
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_907_7569
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_908_7571
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_909_7572
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_90_7183
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_916_7584
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_917_7587
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_918_7590
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_91_7187
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_920_7599
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_92_7217
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_936_7669
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_939_7677
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_93_7237
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_941_7745
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_943_7753
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_944_7758
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_948_7780
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_94_7264
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_951_7784
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_954_7789
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Chiếm Hữu Điên Cuồng","weight":0,"deep_link":"dramawave://dramawa
+
+[POST API] File: request_95_7279
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_967_7807
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_96_7307
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_970_7810
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_971_7813
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_972_7814
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_973_7815
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_97_7322
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_982_7827
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_989_7862
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_98_7337
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_990_7863
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_992_7866
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_997_7880
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_99_7361
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_9_5896
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+=========================================
+ZIP: getxu.proxymanlogv2
+=========================================
+
+[POST API] File: request_100_788
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_101_947
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_102_953
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":14,"report":14,"reported":0,"fail":0}}
+
+[POST API] File: request_103_955
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_104_959
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_16_718
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_23_725
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_24_726
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_29_731
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_35_744
+URL: https://api.mydramawave.com/dm-api/task/reward-to-claim
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"task_list":[{"task_id":3001,"task_code":"watch_ads","same_code":"","same_task_rule_type":0,"task_type":3,"tas
+
+[POST API] File: request_37_746
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_45_754
+URL: https://api.mydramawave.com/dm-api/task/do-task
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true,"reward_amount":20,"task_status":2,"reward_status":2,"watched":false}}
+
+[POST API] File: request_52_762
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_54_764
+URL: https://api.mydramawave.com/dm-api/task/reward-to-claim
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"task_list":[{"task_id":3001,"task_code":"watch_ads","same_code":"","same_task_rule_type":0,"task_type":3,"tas
+
+[POST API] File: request_59_771
+URL: https://api.mydramawave.com/dm-api/task/do-task
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true,"reward_amount":20,"task_status":2,"reward_status":2,"watched":false}}
+
+[POST API] File: request_5_703
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_63_913
+URL: https://api.mydramawave.com/dm-api/task/reward-to-claim
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"task_list":[{"task_id":3001,"task_code":"watch_ads","same_code":"","same_task_rule_type":0,"task_type":3,"tas
+
+[POST API] File: request_67_917
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_73_948
+URL: https://api.mydramawave.com/dm-api/task/do-task
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true,"reward_amount":20,"task_status":2,"reward_status":2,"watched":false}}
+
+[POST API] File: request_7_705
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_89_709
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_8_706
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_90_710
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_91_722
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_92_737
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_93_739
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_94_740
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_95_753
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_96_758
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":12,"report":12,"reported":0,"fail":0}}
+
+[POST API] File: request_97_775
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":15,"report":15,"reported":0,"fail":0}}
+
+[POST API] File: request_98_778
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":11,"report":11,"reported":0,"fail":0}}
+
+[POST API] File: request_99_783
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+=========================================
+ZIP: api.mydramawave.com_07-02-2026-15-09-13.proxymanlogv2
+=========================================
+
+[POST API] File: request_0_125
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_100_477
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_101_480
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_102_487
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_11_148
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_22_177
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_23_179
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_25_191
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_26_193
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_2_129
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_33_202
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_34_203
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_35_204
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_38_215
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_54_345
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_57_348
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_58_433
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_67_451
+URL: https://api.mydramawave.com/dm-api/play/quit/retention
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"is_retention":false,"module_info":{"title":"","list":[]}}}
+
+[POST API] File: request_70_454
+URL: https://api.mydramawave.com/dm-api/drama/view
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true}}
+
+[POST API] File: request_72_143
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":21,"report":21,"reported":0,"fail":0}}
+
+[POST API] File: request_73_149
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_74_167
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_75_184
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_76_200
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_77_205
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_78_220
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_79_250
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":15,"report":15,"reported":0,"fail":0}}
+
+[POST API] File: request_7_137
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Mẹ Kế Con Chồng","weight":0,"deep_link":"dramawave://dramawave.ap
+
+[POST API] File: request_80_253
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_81_272
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_82_275
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_83_279
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_84_285
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_85_298
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_86_309
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_87_313
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_88_320
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_89_328
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_90_336
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_91_357
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_92_376
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_93_393
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_94_405
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_95_432
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_96_436
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_97_439
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":2,"report":2,"reported":0,"fail":0}}
+
+[POST API] File: request_98_449
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":7,"report":7,"reported":0,"fail":0}}
+
+[POST API] File: request_99_464
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":5,"report":5,"reported":0,"fail":0}}
+
+=========================================
+ZIP: getthuocphim_quangcao.proxymanlogv2
+=========================================
+
+[POST API] File: request_100_356
+URL: https://api.mydramawave.com/dm-api/task/do-task
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true,"reward_amount":10,"task_status":2,"reward_status":2,"watched":false}}
+
+[POST API] File: request_109_50
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":18,"report":18,"reported":0,"fail":0}}
+
+[POST API] File: request_110_71
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_111_84
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_112_98
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":4,"report":4,"reported":0,"fail":0}}
+
+[POST API] File: request_113_115
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":16,"report":16,"reported":0,"fail":0}}
+
+[POST API] File: request_114_133
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":8,"report":8,"reported":0,"fail":0}}
+
+[POST API] File: request_115_153
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":19,"report":19,"reported":0,"fail":0}}
+
+[POST API] File: request_116_156
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":9,"report":9,"reported":0,"fail":0}}
+
+[POST API] File: request_117_194
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":6,"report":6,"reported":0,"fail":0}}
+
+[POST API] File: request_118_201
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_119_206
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":11,"report":11,"reported":0,"fail":0}}
+
+[POST API] File: request_120_264
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":10,"report":10,"reported":0,"fail":0}}
+
+[POST API] File: request_121_293
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_122_330
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_123_338
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":3,"report":3,"reported":0,"fail":0}}
+
+[POST API] File: request_124_366
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":13,"report":13,"reported":0,"fail":0}}
+
+[POST API] File: request_125_378
+URL: https://trace.mydramawave.com/b/client_track
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"total":1,"report":1,"reported":0,"fail":0}}
+
+[POST API] File: request_22_28
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_26_37
+URL: https://api.mydramawave.com/dm-api/wallet/store/report
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{}}
+
+[POST API] File: request_29_43
+URL: https://api.mydramawave.com/dm-api/search/suggestion
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"page_info":null,"items":[{"id":0,"keyword":"Khế Ước Dưới Ren","weight":0,"deep_link":"dramawave://dramawave.a
+
+[POST API] File: request_33_47
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_42_64
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_43_66
+URL: https://api.mydramawave.com/dm-api/push/guide-user-open-push
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"create_time":1737628900,"new_user_day":5,"new_user_cnt":1,"cool_down":345600}}
+
+[POST API] File: request_49_81
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_50_82
+URL: https://api.mydramawave.com/dm-api/push/report/token
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_55_93
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/landing/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_56_94
+URL: https://api.mydramawave.com/dm-api/wallet/subscription/guide/page
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_57_97
+URL: https://api.mydramawave.com/dm-api/sys/version/latest
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"update_type":0,"force_update_version":"","normal_update_version":"","version":"","force_popup_title":"upgrade
+
+[POST API] File: request_63_113
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_70_121
+URL: https://api.mydramawave.com/dm-api/push/live-activity-v2
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"list":[{"rec_type":2001,"title_id":"tid_2001_vi_1001","title":"Đang Phát Sóng","subtitle":"{{剧名}}","body":"Đã
+
+[POST API] File: request_78_151
+URL: https://api.mydramawave.com/dm-api/drama/booking
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"success":true,"title":"Đặt Trước Thành Công","coupon_desc":"Bạn đã nhận được phiếu xem miễn phí 1 tập sau khi
+
+[POST API] File: request_79_154
+URL: https://api.mydramawave.com/dm-api/task/reserve-drama-complete
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":null}
+
+[POST API] File: request_83_197
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_88_204
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
+
+[POST API] File: request_93_344
+URL: https://api.mydramawave.com/dm-api/popup/banner/list
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":200,"message":"success","data":{"items":null}}
+
+[POST API] File: request_98_354
+URL: https://api.mydramawave.com/dm-api/zero-cost/popup-info
+Response Code: 200
+Response Body (150 ký tự đầu): {"code":70003,"message":"活动未开启"}
