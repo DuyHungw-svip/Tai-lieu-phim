@@ -1,3 +1,4 @@
+require('dotenv').config();
 const http = require('http');
 const https = require('https');
 const fs = require('fs');
@@ -5,10 +6,12 @@ const path = require('path');
 const { exec } = require('child_process');
 const crypto = require('crypto');
 
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+
 const PORT = 3000;
 const API_HOST = 'api.mydramawave.com';
 const CDN_HOST = 'video-v6.mydramawave.com';
-const DOWNLOAD_DIR = '/Users/duyhung/Downloads/Gợi Ý Phim hay';
+const DOWNLOAD_DIR = process.env.DOWNLOAD_DIR;
 
 const server = http.createServer((req, res) => {
     // Thêm các CORS headers mặc định cho mọi phản hồi từ local server
@@ -606,16 +609,16 @@ async function downloadAndMuxHls(m3u8Url, dramaName, episodeName, subtitleUrl, u
         if (hasFilter) {
             // Cần encode video bằng libx264 để ghi đè filter hình ảnh
             if (bestAudio) {
-                ffmpegCmd = `ffmpeg -y ${inputArgs} ${filterComplex} -c:v libx264 -preset veryfast -crf 20 -c:a aac "${finalOutputPath}"`;
+                ffmpegCmd = `"${ffmpegPath}" -y ${inputArgs} ${filterComplex} -c:v libx264 -preset veryfast -crf 20 -c:a aac "${finalOutputPath}"`;
             } else {
-                ffmpegCmd = `ffmpeg -y ${inputArgs} ${filterComplex} -c:v libx264 -preset veryfast -crf 20 "${finalOutputPath}"`;
+                ffmpegCmd = `"${ffmpegPath}" -y ${inputArgs} ${filterComplex} -c:v libx264 -preset veryfast -crf 20 "${finalOutputPath}"`;
             }
         } else {
             // Không có filter -> copy luồng trực tiếp siêu tốc
             if (bestAudio) {
-                ffmpegCmd = `ffmpeg -y ${inputArgs} -c:v copy -c:a aac "${finalOutputPath}"`;
+                ffmpegCmd = `"${ffmpegPath}" -y ${inputArgs} -c:v copy -c:a aac "${finalOutputPath}"`;
             } else {
-                ffmpegCmd = `ffmpeg -y ${inputArgs} -c:v copy "${finalOutputPath}"`;
+                ffmpegCmd = `"${ffmpegPath}" -y ${inputArgs} -c:v copy "${finalOutputPath}"`;
             }
         }
 

@@ -1128,7 +1128,6 @@ async function downloadDirect(episodeId, m3u8Url, epName) {
         const dlData = await dlRes.json();
         if (dlData.code === 200) {
             addLog(`🎉 Tải phim thành công: ${dlData.filename}`);
-            if (dlData.downloadUrl) triggerBrowserDownload(dlData.downloadUrl, dlData.filename);
         }
     } catch (e) {
         addLog(`⚠️ Lỗi tải video: ${e.message}`);
@@ -1181,13 +1180,10 @@ async function downloadEpisode(episodeId, m3u8Url) {
 
         const data = await res.json();
         if (data.code === 200) {
-            statusText.innerText = "🎉 Đang mở tải xuống...";
+            statusText.innerText = "🎉 Tải thành công!";
             showToast(`Đã lưu vào thư mục Gợi Ý Phim hay.`);
             addLog(`🎉 Tải phim thành công: ${data.filename}`);
             if (data.savedDir) addLog(`📁 Đã lưu tại: ${data.savedDir}`);
-            if (data.downloadUrl) {
-                triggerBrowserDownload(data.downloadUrl, data.filename);
-            }
         } else {
             throw new Error(data.message || "Lỗi tải phim từ Local Server");
         }
