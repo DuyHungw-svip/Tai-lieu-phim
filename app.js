@@ -86,6 +86,7 @@ const checkUseWatermark = document.getElementById('check_use_watermark');
 const imgWatermarkPreview = document.getElementById('img_watermark_preview');
 const rangeWatermarkOpacity = document.getElementById('range_watermark_opacity');
 const textOpacityVal = document.getElementById('text_opacity_val');
+const btnClaimAllAccounts = document.getElementById('btn_claim_all_accounts');
 
 // Khởi chạy ban đầu
 init();
