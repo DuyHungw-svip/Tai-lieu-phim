@@ -362,11 +362,53 @@ const server = http.createServer((req, res) => {
         return;
     }
 
+    // --------------------------------------------------
+    // 5. TẢI ẢNH POSTER PHIM VỀ THƯ MỤC DOWNLOAD_DIR (/download-poster)
+    // --------------------------------------------------
+    if (pathname === '/download-poster' && req.method === 'POST') {
+        let bodyData = [];
+        req.on('data', chunk => {
+            bodyData.push(chunk);
+        }).on('end', async () => {
+            try {
+                const params = JSON.parse(Buffer.concat(bodyData).toString('utf-8'));
+                const { imageUrl, dramaName } = params;
+                if (!imageUrl) {
+                    res.writeHead(400, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify({ code: 400, message: "Thiếu imageUrl" }));
+                    return;
+                }
+
+                const poster = await downloadPosterImage(imageUrl);
+                fs.mkdirSync(DOWNLOAD_DIR, { recursive: true });
+
+                const safeDramaName = sanitizeFileName(dramaName || 'poster');
+                const fileName = `${safeDramaName} - poster${poster.extension}`;
+                const outputPath = path.join(DOWNLOAD_DIR, fileName);
+                fs.writeFileSync(outputPath, poster.buffer);
+
+                console.log(`[POSTER] ✅ Đã lưu poster: ${outputPath}`);
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({
+                    code: 200,
+                    message: "Tải poster thành công!",
+                    filename: fileName,
+                    savedDir: DOWNLOAD_DIR
+                }));
+            } catch (e) {
+                console.error(`[POSTER ERROR] Tải poster thất bại: ${e.message}`);
+                res.writeHead(500, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ code: 500, message: e.message }));
+            }
+        });
+        return;
+    }
+
 
 
 
     // --------------------------------------------------
-    // 5. PHỤC VỤ CÁC FILE GIAO DIỆN (Static Files)
+    // 6. PHỤC VỤ CÁC FILE GIAO DIỆN (Static Files)
     // --------------------------------------------------
     let filePath = path.join(__dirname, pathname === '/' ? 'index.html' : pathname);
     
@@ -412,6 +454,80 @@ function fetchText(url) {
             res.on('data', chunk => data += chunk);
             res.on('end', () => resolve(data));
         }).on('error', reject);
+    });
+}
+
+function sanitizeFileName(value) {
+    return String(value || 'file').replace(/[\\/:*?"<>|]/g, "_").trim() || 'file';
+}
+
+function getImageExtension(url, contentType = '') {
+    const contentTypeMap = {
+        'image/jpeg': '.jpg',
+        'image/jpg': '.jpg',
+        'image/png': '.png',
+        'image/webp': '.webp',
+        'image/gif': '.gif'
+    };
+
+    const normalizedType = contentType.split(';')[0].trim().toLowerCase();
+    if (contentTypeMap[normalizedType]) return contentTypeMap[normalizedType];
+
+    try {
+        const ext = path.extname(new URL(url).pathname).toLowerCase();
+        if (['.jpg', '.jpeg', '.png', '.webp', '.gif'].includes(ext)) {
+            return ext === '.jpeg' ? '.jpg' : ext;
+        }
+    } catch (_) {}
+
+    return '.jpg';
+}
+
+function downloadPosterImage(url, redirectCount = 0) {
+    return new Promise((resolve, reject) => {
+        if (redirectCount > 5) {
+            reject(new Error("Poster redirect quá nhiều lần"));
+            return;
+        }
+
+        let parsed;
+        try {
+            parsed = new URL(url);
+        } catch (_) {
+            reject(new Error("URL poster không hợp lệ"));
+            return;
+        }
+
+        const client = parsed.protocol === 'http:' ? http : https;
+        const req = client.get(parsed, (res) => {
+            const statusCode = res.statusCode || 0;
+            if ([301, 302, 303, 307, 308].includes(statusCode) && res.headers.location) {
+                res.resume();
+                const nextUrl = new URL(res.headers.location, parsed).toString();
+                downloadPosterImage(nextUrl, redirectCount + 1).then(resolve).catch(reject);
+                return;
+            }
+
+            if (statusCode !== 200) {
+                res.resume();
+                reject(new Error(`Tải poster thất bại: HTTP ${statusCode}`));
+                return;
+            }
+
+            const chunks = [];
+            res.on('data', chunk => chunks.push(chunk));
+            res.on('end', () => {
+                resolve({
+                    buffer: Buffer.concat(chunks),
+                    extension: getImageExtension(url, res.headers['content-type'] || '')
+                });
+            });
+        });
+
+        req.on('error', reject);
+        req.setTimeout(30000, () => {
+            req.destroy(new Error("Tải poster quá thời gian chờ"));
+        });
     });
 }
 

@@ -87,6 +87,7 @@ const imgWatermarkPreview = document.getElementById('img_watermark_preview');
 const rangeWatermarkOpacity = document.getElementById('range_watermark_opacity');
 const textOpacityVal = document.getElementById('text_opacity_val');
 const btnClaimAllAccounts = document.getElementById('btn_claim_all_accounts');
+const btnDownloadPoster = document.getElementById('btn_download_poster');
 
 // Khởi chạy ban đầu
 init();
@@ -100,6 +101,7 @@ function init() {
     btnClaimCoins.addEventListener('click', startClaimingProcess);
     btnBackToList.addEventListener('click', showDramaLibrary);
     btnSearch.addEventListener('click', searchDramas);
+    if (btnDownloadPoster) btnDownloadPoster.addEventListener('click', downloadPoster);
     inputSearch.addEventListener('keyup', (e) => {
         if (e.key === 'Enter') searchDramas();
     });
@@ -240,6 +242,70 @@ function triggerBrowserDownload(downloadUrl, filename) {
     document.body.appendChild(link);
     link.click();
     link.remove();
+}
+
+function getSelectedDramaPosterUrl() {
+    if (!selectedDrama) return "";
+
+    return selectedDrama.cover ||
+        selectedDrama.poster ||
+        selectedDrama.image ||
+        selectedDrama.thumbnail ||
+        selectedDrama.cover_url ||
+        selectedDrama.poster_url ||
+        selectedDrama.image_url ||
+        selectedDrama.thumbnail_url ||
+        selectedDrama.pic ||
+        selectedDrama.pic_url ||
+        "";
+}
+
+async function downloadPoster() {
+    if (!selectedDrama) {
+        showToast("Chưa chọn phim để tải poster.");
+        return;
+    }
+
+    const imageUrl = getSelectedDramaPosterUrl();
+    if (!imageUrl) {
+        showToast("Không tìm thấy ảnh poster trong API phim này.");
+        addLog(`⚠️ Không tìm thấy poster cho phim: ${selectedDrama.name || selectedDrama.id}`);
+        return;
+    }
+
+    const originalText = btnDownloadPoster ? btnDownloadPoster.innerHTML : "";
+    if (btnDownloadPoster) {
+        btnDownloadPoster.disabled = true;
+        btnDownloadPoster.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Đang tải ảnh...`;
+    }
+
+    try {
+        const res = await fetch('/download-poster', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                imageUrl,
+                dramaName: selectedDrama.name || selectedDrama.title || selectedDrama.id || 'poster'
+            })
+        });
+        const data = await res.json();
+
+        if (data.code !== 200) {
+            throw new Error(data.message || "Lỗi tải poster");
+        }
+
+        showToast(`Đã lưu ảnh poster vào thư mục Gợi Ý Phim hay.`);
+        addLog(`🖼️ Đã tải poster: ${data.filename}`);
+        if (data.savedDir) addLog(`📁 Đã lưu tại: ${data.savedDir}`);
+    } catch (e) {
+        showToast("Lỗi tải poster: " + e.message);
+        addLog(`❌ Lỗi tải poster: ${e.message}`);
+    } finally {
+        if (btnDownloadPoster) {
+            btnDownloadPoster.disabled = false;
+            btnDownloadPoster.innerHTML = originalText;
+        }
+    }
 }
 
 // --------------------------------------------------
@@ -1193,6 +1259,4 @@ async function downloadEpisode(episodeId, m3u8Url) {
         addLog(`❌ Lỗi tải video: ${e.message}`);
     }
 }
-
-
 
