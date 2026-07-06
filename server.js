@@ -404,6 +404,65 @@ const server = http.createServer((req, res) => {
         return;
     }
 
+    // --------------------------------------------------
+    // 5b. CHẠY SCRIPT NHẬN XU ĐỘC LẬP (/claim-rewards)
+    // --------------------------------------------------
+    if (pathname === '/claim-rewards' && req.method === 'POST') {
+        let bodyData = [];
+        req.on('data', chunk => {
+            bodyData.push(chunk);
+        }).on('end', () => {
+            try {
+                const params = JSON.parse(Buffer.concat(bodyData).toString('utf-8'));
+                const { oauthToken, oauthSignature } = params;
+                
+                if (!oauthToken || !oauthSignature) {
+                    res.writeHead(400, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify({ code: 400, message: "Thiếu oauthToken hoặc oauthSignature" }));
+                    return;
+                }
+
+                console.log(`[CLAIM REWARDS] Bắt đầu chạy script cho token: ${oauthToken.substring(0, 8)}...`);
+
+                // Chạy script claim_rewards.js bằng exec
+                const scriptPath = path.join(__dirname, 'claim_rewards.js');
+                
+                // Tránh command injection bằng cách bao bọc các tham số bằng dấu nháy kép
+                const safeToken = oauthToken.replace(/\"/g, '\\"');
+                const safeSig = oauthSignature.replace(/\"/g, '\\"');
+                
+                exec(`node "${scriptPath}" "${safeToken}" "${safeSig}"`, (error, stdout, stderr) => {
+                    const outputLog = stdout + (stderr ? '\n' + stderr : '');
+                    
+                    if (error) {
+                        console.error(`[CLAIM REWARDS ERROR] Chạy script thất bại: ${error.message}`);
+                        res.writeHead(200, { 'Content-Type': 'application/json' });
+                        res.end(JSON.stringify({
+                            code: 500,
+                            message: "Chạy script nhận thưởng thất bại",
+                            log: outputLog
+                        }));
+                        return;
+                    }
+
+                    console.log(`[CLAIM REWARDS] ✅ Script đã chạy xong thành công!`);
+                    res.writeHead(200, { 'Content-Type': 'application/json' });
+                    res.end(JSON.stringify({
+                        code: 200,
+                        message: "Hoàn tất tiến trình nhận thưởng!",
+                        log: outputLog
+                    }));
+                });
+
+            } catch (err) {
+                res.writeHead(500, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ code: 500, message: err.message }));
+            }
+        });
+        return;
+    }
+
+
 
 
 

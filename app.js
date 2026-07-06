@@ -393,11 +393,6 @@ async function fetchWallet(alertSuccess = false) {
 // --------------------------------------------------
 // LOGIC AUTO-CLAIM ALL COINS (NHẬN XU NHIỆM VỤ)
 // --------------------------------------------------
-function addLog(message) {
-    consoleLog.innerText += `\n[${new Date().toLocaleTimeString()}] ${message}`;
-    consoleLog.scrollTop = consoleLog.scrollHeight;
-}
-
 async function startClaimingProcess() {
     if (!oauthToken || !oauthSignature) {
         showToast("Vui lòng cấu hình tài khoản trước!");
@@ -405,294 +400,37 @@ async function startClaimingProcess() {
     }
 
     consoleContainer.style.display = 'block';
-    consoleLog.innerText = "Bắt đầu tiến trình tự động nhận xu...";
-    claimProgressBar.style.width = '0%';
+    consoleLog.innerText = "Đang gửi yêu cầu và chạy script nhận xu trên server (quá trình này có thể mất 10-30 giây)...";
+    claimProgressBar.style.width = '30%';
     btnClaimCoins.disabled = true;
     if (btnClaimAllAccounts) btnClaimAllAccounts.disabled = true;
 
     try {
-        await runClaimingProcessPromise();
-        showToast("Claim xu thành công!");
+        const res = await fetch('/claim-rewards', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ oauthToken, oauthSignature })
+        });
+        const data = await res.json();
+
+        claimProgressBar.style.width = '100%';
+        if (data.code === 200) {
+            showToast("Hoàn tất tiến trình nhận thưởng!");
+            consoleLog.innerText = data.log || "Không có log trả về.";
+        } else {
+            showToast("Có lỗi xảy ra khi chạy script: " + data.message);
+            consoleLog.innerText = `❌ LỖI:\n${data.message}\n\n=== LOG TIẾN TRÌNH ===\n${data.log || ''}`;
+        }
+        await fetchWallet(false);
     } catch (e) {
-        addLog(`❌ Lỗi tiến trình: ${e.message}`);
+        showToast("Lỗi kết nối server: " + e.message);
+        consoleLog.innerText = `❌ Lỗi kết nối đến server: ${e.message}`;
     } finally {
         btnClaimCoins.disabled = false;
         if (btnClaimAllAccounts) btnClaimAllAccounts.disabled = false;
     }
 }
 
-async function runClaimingProcessPromise() {
-    // === BƯỚC 1: Điểm danh hàng ngày ===
-    addLog(`--- Đang thực hiện: Điểm danh hàng ngày ---`);
-    try { await claimDailyCheckin(); } catch(e) { addLog(`⚠️ Lỗi: ${e.message}`); }
-    claimProgressBar.style.width = '5%';
-
-    // === BƯỚC 2: Lấy danh sách nhiệm vụ từ server để biết task nào đã hoàn thành ===
-    addLog(`--- Đang lấy danh sách nhiệm vụ từ server ---`);
-    try {
-        await claimAllTasksFromRewardList();
-    } catch(e) {
-        addLog(`⚠️ Lỗi lấy danh sách task: ${e.message}. Chuyển sang claim thủ công...`);
-        // Fallback: chạy claim thủ công với task_type đúng
-        const manualTasks = [
-            { name: "Đăng nhập", action: () => claimTask(2001, "Đăng nhập", "login", 5) },
-            { name: "Thông báo", action: () => claimTask(2006, "Thông báo", "push", 7) },
-            { name: "Instagram", action: () => claimTask(2005, "Instagram", "follow_instagram", 6) },
-            { name: "TikTok", action: () => claimTask(2003, "TikTok", "follow_tiktok", 6) },
-            { name: "YouTube", action: () => claimTask(2002, "YouTube", "follow_youtube", 6) },
-            { name: "Facebook", action: () => claimTask(2004, "Facebook", "follow_facebook", 6) },
-            { name: "WhatsApp", action: () => claimTask(2025, "WhatsApp", "whatsapp", 18) },
-            { name: "Xem 10m", action: () => claimTask(2007, "Xem 10m", "watch_10_mins", 8) },
-            { name: "Xem 15m", action: () => claimTask(2008, "Xem 15m", "watch_15_mins", 8) },
-            { name: "Xem 20m", action: () => claimTask(2009, "Xem 20m", "watch_20_mins", 8) },
-        ];
-        for (const t of manualTasks) {
-            try { await t.action(); } catch(e2) { addLog(`⚠️ ${t.name}: ${e2.message}`); }
-        }
-    }
-    claimProgressBar.style.width = '40%';
-
-    // === BƯỚC 3: Đặt trước phim mới ===
-    addLog(`--- Đang thực hiện: Đặt trước phim mới ---`);
-    try { await claimReserveDrama(); } catch(e) { addLog(`⚠️ Lỗi: ${e.message}`); }
-    claimProgressBar.style.width = '50%';
-
-    // === BƯỚC 4: 10 Quảng Cáo Hàng Ngày ===
-    addLog(`--- Đang thực hiện: 10 Quảng Cáo Hàng Ngày ---`);
-    try { await claimAllAds(); } catch(e) { addLog(`⚠️ Lỗi: ${e.message}`); }
-    claimProgressBar.style.width = '85%';
-
-    // === BƯỚC 6: Quảng cáo điểm danh ===
-    addLog(`--- Đang thực hiện: Xem quảng cáo điểm danh ---`);
-    try { await claimCheckinAds(); } catch(e) { addLog(`⚠️ Lỗi: ${e.message}`); }
-    claimProgressBar.style.width = '100%';
-
-    addLog("🎉 ĐÃ HOÀN THÀNH TIẾN TRÌNH NHẬN XU CHO TÀI KHOẢN NÀY!");
-    await fetchWallet(false);
-}
-
-
-
-// Hàm gửi request Điểm danh hàng ngày
-async function claimDailyCheckin() {
-    addLog("Đang thực hiện điểm danh hàng ngày (Check-in)...");
-    try {
-        const res = await callApi('/dm-api/task/daily-checkins');
-        if (res.code === 200) {
-            const consecutive = res.data && res.data.checkins_info ? res.data.checkins_info.consecutive_days : 1;
-            addLog(`  🎉 Điểm danh thành công! Chuỗi điểm danh liên tục: ${consecutive} ngày.`);
-        } else {
-            addLog(`  ℹ️ Thông báo điểm danh: ${res.message || 'Đã điểm danh hôm nay hoặc lỗi'}`);
-        }
-    } catch (e) {
-        addLog(`  ❌ Lỗi điểm danh: ${e.message}`);
-    }
-}
-
-// Hàm tự động đặt trước phim sắp chiếu (Bypass task 2104)
-async function claimReserveDrama() {
-    addLog("Đang tải danh sách phim sắp chiếu để thực hiện đặt trước...");
-    try {
-        const listRes = await callApi('/dm-api/coming-soon/list?next=');
-        if (listRes.code === 200 && listRes.data && Array.isArray(listRes.data.items)) {
-            let keys = [];
-            listRes.data.items.forEach(module => {
-                if (module.items && Array.isArray(module.items)) {
-                    module.items.forEach(item => {
-                        if (item.key) keys.push(item.key);
-                    });
-                }
-            });
-
-            if (keys.length < 3) {
-                addLog("  ⚠️ Không đủ phim sắp chiếu để thực hiện đặt trước.");
-                return;
-            }
-
-            for (let i = 0; i < 3; i++) {
-                const key = keys[i];
-                addLog(`  Đang đặt trước phim thứ ${i+1} (Key: ${key})...`);
-                await callApi('/dm-api/drama/booking', 'POST', { series_key: key });
-                await callApi('/dm-api/task/reserve-drama-complete', 'POST', { series_key: key });
-            }
-
-            addLog("Đang chạy tiến trình nhận xu cho nhiệm vụ Đặt trước phim...");
-            await claimTask(2104, "Đặt trước phim", "reserve_drama", 17);
-        } else {
-            addLog("  ❌ Không thể lấy danh sách phim sắp chiếu.");
-        }
-    } catch (e) {
-        addLog(`  ❌ Lỗi đặt trước phim: ${e.message}`);
-    }
-}
-
-// Hàm chạy xem quảng cáo điểm danh (Daily Check-in Ads)
-async function claimCheckinAds() {
-    addLog("Đang lấy thông tin Quảng cáo điểm danh...");
-    try {
-        const checkinRes = await callApi('/dm-api/task/daily-checkins');
-        if (checkinRes.code === 200 && checkinRes.data && checkinRes.data.new_extra_ad) {
-            const extraAd = checkinRes.data.new_extra_ad;
-            const extraAdId = extraAd.id;
-            const allCount = extraAd.all || 10;
-            const finished = extraAd.finished || 0;
-            const remain = allCount - finished;
-            
-            if (remain <= 0) {
-                addLog("  🎉 Bạn đã xem hết toàn bộ quảng cáo điểm danh hôm nay rồi!");
-                return;
-            }
-
-            addLog(`  Phát hiện: Đã xem ${finished}/${allCount}. Cần xem thêm ${remain} quảng cáo điểm danh (ID: ${extraAdId})...`);
-            for (let i = 1; i <= remain; i++) {
-                addLog(`  Đang chạy ad điểm danh ${i}/${remain}...`);
-                const doRes = await callApi('/dm-api/task/do-task', 'POST', {
-                    task_id: extraAdId,
-                    task_type: 4
-                });
-                addLog(`    Báo cáo ad: ${doRes.message || 'OK'}`);
-
-                // Gọi API nhận thưởng xu sau khi hoàn thành task
-                const rewardRes = await callApi('/dm-api/task/reward-to-claim', 'POST', {
-                    task_id: extraAdId,
-                    task_type: 4
-                });
-                
-                if (rewardRes.code === 200 && rewardRes.data) {
-                    addLog(`    🎉 Thành công! Nhận được: +${rewardRes.data.bonus_amount || rewardRes.data.reward_amount || 10} xu.`);
-                } else {
-                    addLog(`    ℹ️ Thông báo: ${rewardRes.message || 'Lỗi hoặc hết lượt'}`);
-                }
-
-                if (i < remain) {
-                    addLog("Đang chờ 6.5 giây giãn cách để tránh lỗi freeze_time...");
-                    await new Promise(resolve => setTimeout(resolve, 6500));
-                }
-            }
-        } else {
-            addLog("  ❌ Không thể lấy thông tin quảng cáo điểm danh.");
-        }
-    } catch (e) {
-        addLog(`  ❌ Lỗi quảng cáo điểm danh: ${e.message}`);
-    }
-}
-
-// Helper kiểm tra chính xác server có thực sự trao xu hay không
-function isRewardClaimSuccess(resData) {
-    if (!resData) return false;
-    if (Array.isArray(resData.task_list) && resData.task_list.length > 0) return true;
-    if (resData.bonus_amount && resData.bonus_amount > 0) return true;
-    if (resData.reward_amount && resData.reward_amount > 0) return true;
-    return false;
-}
-
-// Hàm thông minh: Lấy danh sách task từ server rồi auto-claim tất cả
-async function claimAllTasksFromRewardList() {
-    const listRes = await callApi('/dm-api/task/reward-list/v2');
-    if (listRes.code !== 200 || !listRes.data || !listRes.data.task_list) {
-        throw new Error('Không lấy được danh sách nhiệm vụ');
-    }
-
-    const taskList = listRes.data.task_list;
-    addLog(`  📋 Tìm thấy ${taskList.length} nhiệm vụ từ server.`);
-
-    for (const task of taskList) {
-        // Bỏ qua task ads (3001) vì có hàm riêng xử lý
-        if (task.task_id === 3001) continue;
-        
-        // Trạng thái task_status = 4: Đã nhận thưởng rồi
-        if (task.task_status === 4) {
-            addLog(`  ✅ [${task.task_name || task.task_code}] Đã nhận thưởng trước đó rồi. Bỏ qua.`);
-            continue;
-        }
-
-        if (task.task_status === 1) {
-            addLog(`  ℹ️ [${task.task_name || task.task_code}] Chưa đủ điều kiện hoàn thành trên app (chưa đủ thời gian/yêu cầu).`);
-            continue;
-        }
-
-        addLog(`  🎁 [${task.task_name || task.task_code}] (ID: ${task.task_id}) - Đã xong, đang tiến hành nhận xu...`);
-        const body = { task_id: task.task_id, task_code: task.task_code, task_type: task.task_type };
-
-        try {
-            const rewardRes = await callApi('/dm-api/task/reward-to-claim', 'POST', body);
-            if (rewardRes.code === 200 && isRewardClaimSuccess(rewardRes.data)) {
-                addLog(`    🎉 Nhận thưởng thành công! +${task.reward_amount || 'N/A'} xu.`);
-            } else {
-                addLog(`    ℹ️ Thông báo từ server: ${rewardRes.message || 'Chưa đủ điều kiện nhận xu'}`);
-            }
-        } catch(e) {
-            addLog(`    ❌ Lỗi nhận thưởng: ${e.message}`);
-        }
-    }
-}
-
-// Hàm gửi request claim cho một task_id với đầy đủ tham số tùy chọn
-async function claimTask(taskId, label, taskCode = "", taskType = 0) {
-    addLog(`Đang gửi yêu cầu làm nhiệm vụ ${label}...`);
-    const body = { task_id: taskId };
-    if (taskCode) body.task_code = taskCode;
-    if (taskType) body.task_type = taskType;
-
-    let res = await callApi('/dm-api/task/do-task', 'POST', body);
-    addLog(`  Làm nhiệm vụ: ${res.message || 'Thành công'}`);
-
-    addLog(`Đang gửi yêu cầu nhận thưởng ${label}...`);
-    res = await callApi('/dm-api/task/reward-to-claim', 'POST', body);
-    if (res.code === 200 && isRewardClaimSuccess(res.data)) {
-        addLog(`  🎉 Thành công! Nhận được: +${res.data ? (res.data.bonus_amount || res.data.reward_amount) : 'N/A'} xu.`);
-    } else {
-        addLog(`  ℹ️ Thông báo từ server: ${res.message || 'Không thể nhận'}`);
-    }
-}
-
-// Hàm chạy claim 10 ads hàng ngày (lấy ad-list từ server để xem và claim chuẩn)
-async function claimAllAds() {
-    addLog("Đang tải danh sách 10 Quảng Cáo Hàng Ngày từ server...");
-    try {
-        const adListRes = await callApi('/dm-api/task/ad-list');
-        const adTasks = adListRes.data && Array.isArray(adListRes.data.task_list) ? adListRes.data.task_list : [];
-
-        if (adTasks.length === 0) {
-            addLog("  ℹ️ Hôm nay không có quảng cáo hàng ngày nào khả dụng (hoặc đã xem hết 10/10).");
-            return;
-        }
-
-        addLog(`  Phát hiện ${adTasks.length} nhiệm vụ quảng cáo hàng ngày.`);
-        for (let i = 0; i < adTasks.length; i++) {
-            const ad = adTasks[i];
-            if (ad.task_status === 4) {
-                addLog(`  ✅ Quảng Cáo ${i+1}/${adTasks.length} (ID: ${ad.task_id}) đã nhận thưởng trước đó rồi.`);
-                continue;
-            }
-
-            addLog(`  Đang chạy xem Quảng Cáo ${i+1}/${adTasks.length} (ID: ${ad.task_id})...`);
-            const doBody = {
-                task_id: ad.task_id,
-                task_code: "",
-                task_type: ad.task_type || 3
-            };
-
-            let doRes = await callApi('/dm-api/task/do-task', 'POST', doBody);
-            
-            if (doRes.code === 200 && doRes.data && (doRes.data.reward_status === 2 || doRes.data.success === true) && doRes.data.reward_amount > 0) {
-                addLog(`    🎉 Xem Ad ${i+1} thành công! Nhận được +${doRes.data.reward_amount} xu.`);
-            } else if (doRes.data && (doRes.data.task_status === 6 || doRes.data.success === false)) {
-                addLog(`    ℹ️ Bỏ qua Ad ${i+1}: Ad này đã nhận thưởng trước đó hoặc không khả dụng.`);
-            } else {
-                addLog(`    ℹ️ Thông báo Ad ${i+1}: ${doRes.message || 'Chưa đủ điều kiện'}`);
-            }
-
-            if (i < adTasks.length - 1) {
-                addLog("Đang chờ 6.5 giây giãn cách (freeze_time)...");
-                await new Promise(resolve => setTimeout(resolve, 6500));
-            }
-        }
-        await fetchWallet(false);
-    } catch (e) {
-        addLog(`  ❌ Lỗi tiến trình quảng cáo hàng ngày: ${e.message}`);
-    }
-}
 
 // --------------------------------------------------
 // LOGIC LẤY & HIỂN THỊ DANH SÁCH PHIM
