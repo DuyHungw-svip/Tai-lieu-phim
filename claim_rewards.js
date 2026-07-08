@@ -206,14 +206,19 @@ async function claimReserveDrama() {
     } catch (e) {}
 }
 
-// ===================== NHẬN XU TỪ REWARD LIST (Watch 10m/15m/20m...) =====================
+// ===================== NHẬN XU TỪ REWARD LIST (Đăng nhập, MXH, Xem phim theo phút...) =====================
 async function claimAllTasksFromRewardList() {
     try {
         const listRes = await callApi('/dm-api/task/reward-list/v2');
         if (listRes.code !== 200 || !listRes.data || !listRes.data.task_list) return;
 
         const taskList = listRes.data.task_list;
-        let eligibleTasks = taskList.filter(t => t.task_status === 2 && t.task_id !== 3001);
+        
+        // Chỉ bỏ qua nhiệm vụ quảng cáo (3001) vì yêu cầu SDK xác thực bắt buộc.
+        // Vẫn giữ các nhiệm vụ khác (bao gồm cả xem phim 10m/15m/20m) để thử nhận thưởng.
+        const blacklistedTaskIds = [3001];
+        
+        let eligibleTasks = taskList.filter(t => t.task_status === 2 && !blacklistedTaskIds.includes(t.task_id));
 
         for (const task of eligibleTasks) {
             const body = { task_id: task.task_id, task_code: task.task_code, task_type: task.task_type };
@@ -228,9 +233,14 @@ async function claimAllTasksFromRewardList() {
                         addDetailLog(`🎉 Nhiệm vụ [${task.task_name || task.task_code}] thành công: +${diff} xu!`);
                     }
                 }
-            } catch(e) {}
+            } catch(e) {
+                // Ghi nhận lỗi của riêng nhiệm vụ này và tiếp tục vòng lặp với các nhiệm vụ khác
+                addDetailLog(`⚠️ Lỗi khi nhận nhiệm vụ [${task.task_name || task.task_code}]: ${e.message}`);
+            }
         }
-    } catch (e) {}
+    } catch (e) {
+        log(`❌ Lỗi quét danh sách nhiệm vụ: ${e.message}`);
+    }
 }
 
 // ===================== KIỂM TRA SỐ DƯ =====================

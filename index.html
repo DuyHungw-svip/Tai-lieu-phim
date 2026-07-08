@@ -100,10 +100,20 @@
 
         <!-- Search and Show List Panel -->
         <div class="panel">
-            <div class="panel-title"><i class="fa-solid fa-film"></i> Thư Viện Phim Ngắn</div>
+            <div class="panel-title" style="display: flex; justify-content: space-between; align-items: center;">
+                <span><i class="fa-solid fa-film"></i> Thư Viện Phim Ngắn</span>
+                <button id="btn_refresh_library" class="btn" style="padding: 5px 12px; font-size: 13px; margin: 0; background: var(--accent-neon); color: #000; font-weight: bold;"><i class="fa-solid fa-arrows-rotate"></i> Đồng bộ phim mới</button>
+            </div>
+            
+            <div class="tabs-container" id="tabs_container">
+                <div class="tab-item active" data-tab="125">⭐ Đề Xuất</div>
+                <div class="tab-item" data-tab="126">🆕 Mới Nhất</div>
+                <div class="tab-item" data-tab="129">🎙️ Lồng Tiếng</div>
+                <div class="tab-item" data-tab="123">💡 Gợi Ý</div>
+            </div>
             
             <div class="search-container">
-                <input type="text" id="input_search" class="search-input" placeholder="Nhập tên phim để tìm kiếm nhanh...">
+                <input type="text" id="input_search" class="search-input" placeholder="Nhập tên phim để tìm kiếm nhanh trong tab này...">
                 <button id="btn_search" class="btn"><i class="fa-solid fa-magnifying-glass"></i> Tìm Kiếm</button>
             </div>
 

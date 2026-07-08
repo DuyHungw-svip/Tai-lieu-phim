@@ -293,6 +293,44 @@ header h1 span {
     border-color: var(--accent-purple);
 }
 
+/* Navigation Tabs */
+.tabs-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 12px;
+    overflow-x: auto;
+}
+
+.tab-item {
+    padding: 10px 22px;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tab-item:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.tab-item.active {
+    color: var(--accent-neon);
+    background: rgba(57, 211, 83, 0.08);
+    border-color: rgba(57, 211, 83, 0.25);
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(57, 211, 83, 0.1);
+}
+
+
+
 /* Drama list grid */
 .drama-list {
     display: grid;
