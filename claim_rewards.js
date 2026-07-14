@@ -82,28 +82,34 @@ function addDetailLog(msg) {
     detailsLog.push(`[${time}] ${msg}`);
 }
 
-// Helper check success
-function isRewardClaimSuccess(resData) {
-    if (!resData) return false;
-    if (resData.bonus_amount && resData.bonus_amount > 0) return true;
-    if (resData.reward_amount && resData.reward_amount > 0) return true;
-    return false;
-}
-
 // ===================== ĐIỂM DANH HÀNG NGÀY =====================
 async function claimDailyCheckins() {
     try {
         const res = await callApi('/dm-api/task/daily-checkins');
-        if (res.code !== 200 || !res.data) return;
+        if (res.code !== 200 || !res.data) {
+            addDetailLog(`❌ Không lấy được thông tin điểm danh từ server: ${res.message || 'Lỗi không xác định'}`);
+            return;
+        }
 
         const { task_list } = res.data;
+        addDetailLog(`━━━ ĐIỂM DANH HÀNG NGÀY ━━━`);
 
         for (const task of task_list) {
-            if (task.task_status === 2 && task.reward_status === 2) continue;
-            if (task.task_status === 1) continue;
+            // Trường hợp 1: Đã nhận điểm danh rồi
+            if (task.task_status === 2 && task.reward_status === 2) {
+                addDetailLog(`📅 Ngày ${task.day_num} (${task.reward_amount} xu): Đã nhận rồi ✅`);
+                continue;
+            }
+            
+            // Trường hợp 2: Chưa đến ngày điểm danh
+            if (task.task_status === 1) {
+                addDetailLog(`📅 Ngày ${task.day_num} (${task.reward_amount} xu): Chưa đến lượt ⏳`);
+                continue;
+            }
 
+            // Trường hợp 3: Sẵn sàng nhận (chưa nhận thưởng hôm nay)
             try {
-                // Lưu số dư trước khi bấm nhận
+                addDetailLog(`📅 Ngày ${task.day_num} (${task.reward_amount} xu): Đang tiến hành điểm danh...`);
                 const balBefore = await getWalletBalance() || 0;
 
                 const doRes = await callApi('/dm-api/task/do-task', 'POST', {
@@ -113,17 +119,24 @@ async function claimDailyCheckins() {
                 });
 
                 if (doRes.code === 200) {
-                    // Check số dư sau để xác nhận xu thật tăng
                     const balAfter = await getWalletBalance() || 0;
                     const diff = balAfter - balBefore;
 
                     if (diff > 0) {
-                        addDetailLog(`🎉 Điểm danh ngày ${task.day_num} thành công: +${diff} xu!`);
+                        addDetailLog(`🎉 Điểm danh ngày ${task.day_num} THÀNH CÔNG: +${diff} xu! ✅`);
+                    } else {
+                        addDetailLog(`⚠️ Điểm danh ngày ${task.day_num} hoàn tất nhưng ví không tăng xu.`);
                     }
+                } else {
+                    addDetailLog(`❌ Điểm danh ngày ${task.day_num} thất bại: ${doRes.message || 'Lỗi server'}`);
                 }
-            } catch (e) {}
+            } catch (e) {
+                addDetailLog(`❌ Lỗi kết nối khi điểm danh ngày ${task.day_num}: ${e.message}`);
+            }
         }
-    } catch (e) {}
+    } catch (e) {
+        addDetailLog(`❌ Lỗi hệ thống điểm danh: ${e.message}`);
+    }
 }
 
 // ===================== QC BONUS ĐIỂM DANH =====================
@@ -136,8 +149,15 @@ async function claimCheckinBonusAds() {
         const { id, finished, all } = extra;
         const remain = all - finished;
 
-        if (remain <= 0) return;
+        addDetailLog(`━━━ QUẢNG CÁO BONUS ĐIỂM DANH ━━━`);
+        addDetailLog(`📺 Trạng thái xem: Đã xem ${finished}/${all} video quảng cáo bonus.`);
 
+        if (remain <= 0) {
+            addDetailLog(`✅ Đã nhận hết toàn bộ quảng cáo bonus điểm danh hôm nay.`);
+            return;
+        }
+
+        addDetailLog(`🔄 Đang tiến hành nhận xu cho ${remain} quảng cáo bonus còn lại...`);
         for (let i = 1; i <= remain; i++) {
             try {
                 const balBefore = await getWalletBalance() || 0;
@@ -152,25 +172,37 @@ async function claimCheckinBonusAds() {
                     const diff = balAfter - balBefore;
 
                     if (diff > 0) {
-                        addDetailLog(`🎉 Nhận xu quảng cáo bonus điểm danh (${finished + i}/${all}): +${diff} xu!`);
+                        addDetailLog(`🎉 Nhận xu ad bonus (${finished + i}/${all}) thành công: +${diff} xu! ✅`);
                     } else if (doRes.data && doRes.data.task_status === 7) {
-                        break; // Server phát hiện chưa xem ad thật
+                        addDetailLog(`❌ Dừng nhận: Server yêu cầu xem quảng cáo thật trên app di động.`);
+                        break;
+                    } else {
+                        addDetailLog(`⚠️ Nhận ad bonus (${finished + i}/${all}) hoàn tất nhưng ví không tăng xu.`);
                     }
+                } else {
+                    addDetailLog(`❌ Nhận ad bonus (${finished + i}/${all}) thất bại: ${doRes.message || 'Lỗi server'}`);
                 }
-            } catch (e) {}
+            } catch (e) {
+                addDetailLog(`❌ Lỗi kết nối khi nhận ad bonus: ${e.message}`);
+            }
 
             if (i < remain) {
                 await sleep(CONFIG.freezeDelay);
             }
         }
-    } catch (e) {}
+    } catch (e) {
+        addDetailLog(`❌ Lỗi hệ thống ad bonus: ${e.message}`);
+    }
 }
 
 // ===================== TỰ ĐỘNG ĐẶT TRƯỚC PHIM =====================
 async function claimReserveDrama() {
     try {
         const listRes = await callApi('/dm-api/coming-soon/list?next=');
-        if (listRes.code !== 200 || !listRes.data || !Array.isArray(listRes.data.items)) return;
+        if (listRes.code !== 200 || !listRes.data || !Array.isArray(listRes.data.items)) {
+            addDetailLog(`❌ Lỗi lấy danh sách phim sắp chiếu: ${listRes.message || 'Lỗi không xác định'}`);
+            return;
+        }
 
         let keys = [];
         listRes.data.items.forEach(module => {
@@ -181,14 +213,21 @@ async function claimReserveDrama() {
             }
         });
 
-        if (keys.length < 3) return;
+        addDetailLog(`━━━ ĐẶT TRƯỚC PHIM SẮP CHIẾU (Task 2104) ━━━`);
+        if (keys.length < 3) {
+            addDetailLog(`ℹ️ Không có đủ phim sắp chiếu để thực hiện đặt trước (yêu cầu 3 phim, hiện có: ${keys.length}).`);
+            return;
+        }
 
-        // Đặt trước 3 phim
+        // Đặt trước 3 phim đầu tiên
+        let successCount = 0;
         for (let i = 0; i < 3; i++) {
             const key = keys[i];
             await callApi('/dm-api/drama/booking', 'POST', { series_key: key });
-            await callApi('/dm-api/task/reserve-drama-complete', 'POST', { series_key: key });
+            const completeRes = await callApi('/dm-api/task/reserve-drama-complete', 'POST', { series_key: key });
+            if (completeRes.code === 200) successCount++;
         }
+        addDetailLog(`🔄 Đã đặt trước thành công ${successCount}/3 phim.`);
 
         const body = { task_id: 2104, task_code: 'reserve_drama', task_type: 17 };
         await callApi('/dm-api/task/do-task', 'POST', body);
@@ -200,46 +239,56 @@ async function claimReserveDrama() {
             const balAfter = await getWalletBalance() || 0;
             const diff = balAfter - balBefore;
             if (diff > 0) {
-                addDetailLog(`🎉 Nhiệm vụ Đặt trước phim thành công: +${diff} xu!`);
+                addDetailLog(`🎉 Nhận xu nhiệm vụ đặt trước phim thành công: +${diff} xu! ✅`);
+            } else {
+                addDetailLog(`ℹ️ Nhiệm vụ đặt trước phim đã hoàn thành nhưng ví không tăng xu (có thể đã nhận trước đó).`);
             }
+        } else {
+            addDetailLog(`ℹ️ Không thể nhận xu đặt trước phim: ${rewardRes.message || 'Chưa đủ điều kiện hoặc đã nhận rồi'}`);
         }
-    } catch (e) {}
+    } catch (e) {
+        addDetailLog(`❌ Lỗi nhiệm vụ đặt trước phim: ${e.message}`);
+    }
 }
 
 // ===================== NHẬN XU TỪ REWARD LIST (Đăng nhập, MXH, Xem phim theo phút...) =====================
 async function claimAllTasksFromRewardList() {
     try {
         const listRes = await callApi('/dm-api/task/reward-list/v2');
-        if (listRes.code !== 200 || !listRes.data || !listRes.data.task_list) return;
+        if (listRes.code !== 200 || !listRes.data || !listRes.data.task_list) {
+            addDetailLog(`❌ Không lấy được danh sách nhiệm vụ từ server.`);
+            return;
+        }
 
         const taskList = listRes.data.task_list;
-        
-        // Chỉ bỏ qua nhiệm vụ quảng cáo (3001) vì yêu cầu SDK xác thực bắt buộc.
-        // Vẫn giữ các nhiệm vụ khác (bao gồm cả xem phim 10m/15m/20m) để thử nhận thưởng.
         const blacklistedTaskIds = [3001];
         
         let eligibleTasks = taskList.filter(t => t.task_status === 2 && !blacklistedTaskIds.includes(t.task_id));
 
-        for (const task of eligibleTasks) {
-            const body = { task_id: task.task_id, task_code: task.task_code, task_type: task.task_type };
-            try {
-                const balBefore = await getWalletBalance() || 0;
-                let rewardRes = await callApi('/dm-api/task/reward-to-claim', 'POST', body);
-                
-                if (rewardRes.code === 200) {
-                    const balAfter = await getWalletBalance() || 0;
-                    const diff = balAfter - balBefore;
-                    if (diff > 0) {
-                        addDetailLog(`🎉 Nhiệm vụ [${task.task_name || task.task_code}] thành công: +${diff} xu!`);
+        if (eligibleTasks.length > 0) {
+            addDetailLog(`━━━ NHẬN XU CÁC NHIỆM VỤ KHÁC ━━━`);
+            for (const task of eligibleTasks) {
+                const body = { task_id: task.task_id, task_code: task.task_code, task_type: task.task_type };
+                try {
+                    const balBefore = await getWalletBalance() || 0;
+                    let rewardRes = await callApi('/dm-api/task/reward-to-claim', 'POST', body);
+                    
+                    if (rewardRes.code === 200) {
+                        const balAfter = await getWalletBalance() || 0;
+                        const diff = balAfter - balBefore;
+                        if (diff > 0) {
+                            addDetailLog(`🎉 Nhiệm vụ [${task.task_name || task.task_code}] thành công: +${diff} xu! ✅`);
+                        }
+                    } else {
+                        addDetailLog(`❌ Nhiệm vụ [${task.task_name || task.task_code}] thất bại: ${rewardRes.message}`);
                     }
+                } catch(e) {
+                    addDetailLog(`⚠️ Lỗi khi nhận nhiệm vụ [${task.task_name || task.task_code}]: ${e.message}`);
                 }
-            } catch(e) {
-                // Ghi nhận lỗi của riêng nhiệm vụ này và tiếp tục vòng lặp với các nhiệm vụ khác
-                addDetailLog(`⚠️ Lỗi khi nhận nhiệm vụ [${task.task_name || task.task_code}]: ${e.message}`);
             }
         }
     } catch (e) {
-        log(`❌ Lỗi quét danh sách nhiệm vụ: ${e.message}`);
+        addDetailLog(`❌ Lỗi quét danh sách nhiệm vụ: ${e.message}`);
     }
 }
 
@@ -259,6 +308,9 @@ async function main() {
     // 1. Lấy số dư trước khi chạy
     const balanceBefore = await getWalletBalance() || 0;
 
+    log('🚀 BẮT ĐẦU NHẬN THƯỞNG DRAMAWAVE');
+    console.log('═'.repeat(50));
+
     // 2. Chạy các nhiệm vụ ngầm
     await claimDailyCheckins();
     await claimReserveDrama();
@@ -269,19 +321,17 @@ async function main() {
     const balanceAfter = await getWalletBalance() || 0;
     const earnedCoinsTotal = balanceAfter - balanceBefore;
 
-    // 4. Xuất log rút gọn
+    // 4. Xuất log chi tiết
+    detailsLog.forEach(line => console.log(line));
+    console.log('═'.repeat(50));
+    
     if (earnedCoinsTotal > 0) {
-        log('🚀 BẮT ĐẦU NHẬN THƯỞNG DRAMAWAVE');
-        console.log('═'.repeat(50));
-        // In các chi tiết nhận xu thành công
-        detailsLog.forEach(line => console.log(line));
-        console.log('═'.repeat(50));
         log(`📈 Tổng kết: Nhận thành công +${earnedCoinsTotal} xu! Số dư hiện tại: ${balanceAfter} xu.`);
-        log('✅ HOÀN TẤT!');
     } else {
-        // Log siêu rút gọn nếu không nhận được thêm xu nào
-        log(`📅 Hôm nay bạn đã nhận hết toàn bộ xu rồi. Số dư hiện tại: ${balanceAfter} xu. (+0 xu)`);
+        log(`📈 Tổng kết: Không có xu nào mới được cộng thêm. Số dư ví: ${balanceAfter} xu. (+0 xu)`);
+        log(`💡 Gợi ý: Nếu hôm nay là ngày mới của bạn nhưng chưa nhận được xu, có thể server DramaWave chưa reset ngày mới (do lệch múi giờ Mỹ/UTC). Hãy thử lại sau!`);
     }
+    log('✅ HOÀN TẤT!');
 }
 
 main().catch(e => {

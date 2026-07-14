@@ -25,6 +25,9 @@ let oauthSignature = localStorage.getItem('dw_oauth_signature') || '4a7eb6b6e263
 let currentBalance = 0;
 let allDramas = []; // Danh sách toàn bộ phim
 let activeTabKey = '125'; // Tab hiện tại (mặc định: 125 - Đề xuất)
+let currentPage = 1; // Trang hiện tại
+const itemsPerPage = 10000000000; // Số lượng phim hiển thị trên mỗi trang
+let currentFilteredDramas = []; // Mảng phim sau khi đã lọc để phân trang
 let selectedDrama = null; // Bộ phim đang được chọn
 let selectedEpisodeToUnlock = null; // Tập phim đang chờ mở khóa
 let adSupported = false; // Drama hiện tại có hỗ trợ unlock bằng QC không
@@ -73,6 +76,7 @@ const btnSearch = document.getElementById('btn_search');
 const btnRefreshLibrary = document.getElementById('btn_refresh_library');
 const tabsContainer = document.getElementById('tabs_container');
 const dramaListContainer = document.getElementById('drama_list_container');
+const paginationContainer = document.getElementById('pagination_container');
 const episodesPanel = document.getElementById('episodes_panel');
 const btnBackToList = document.getElementById('btn_back_to_list');
 const dramaCover = document.getElementById('drama_cover');
@@ -468,20 +472,18 @@ async function startClaimingProcess() {
 // LOGIC LẤY & HIỂN THỊ DANH SÁCH PHIM
 // --------------------------------------------------
 // Hàm reload mới (Đồng bộ lại tab hiện tại)
+// Hàm reload mới (Đồng bộ và làm mới lại tab hiện tại)
 async function refreshLibrary() {
     if (btnRefreshLibrary) {
         btnRefreshLibrary.disabled = true;
-        btnRefreshLibrary.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Đang đồng bộ...`;
+        btnRefreshLibrary.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Đang tải...`;
     }
     
-    // Xóa cache cũ của tab hiện tại để buộc tải mới
-    localStorage.removeItem('dw_cached_dramas_' + activeTabKey);
-    
     try {
-        await loadDramasFromHomepage(true);
-        showToast("Đồng bộ phim mới thành công!");
+        await loadDramasFromHomepage();
+        showToast("Làm mới danh sách phim thành công!");
     } catch(e) {
-        showToast("Lỗi đồng bộ phim: " + e.message);
+        showToast("Lỗi tải lại phim: " + e.message);
     } finally {
         if (btnRefreshLibrary) {
             btnRefreshLibrary.disabled = false;
@@ -490,72 +492,45 @@ async function refreshLibrary() {
     }
 }
 
-async function loadDramasFromHomepage(forceRefresh = false) {
+async function loadDramasFromHomepage() {
     if (!oauthToken || !oauthSignature) {
         dramaListContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 20px;"><i class="fa-solid fa-circle-info" style="font-size: 24px; margin-bottom: 8px; color: var(--accent-neon);"></i><p>Vui lòng điền oauth_token và oauth_signature ở trên, sau đó nhấn "Lưu Cấu Hình" để tải danh sách phim!</p></div>`;
         return;
     }
 
     try {
-        // Nạp từ cache localStorage của tab hiện tại nếu có sẵn để hiển thị tức thì
-        const cacheKey = 'dw_cached_dramas_' + activeTabKey;
-        const cached = localStorage.getItem(cacheKey);
-        if (cached) {
-            try {
-                allDramas = JSON.parse(cached);
-                allDramas.sort((a, b) => a.name.localeCompare(b.name, 'vi'));
-                renderDramas(allDramas);
-                
-                // Nếu không ép buộc tải lại (forceRefresh === false), ta DỪNG lại ở đây để danh sách phim cố định
-                if (!forceRefresh) {
-                    return;
+        // Luôn hiển thị spinner và tải mới từ server
+        dramaListContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fa-solid fa-spinner fa-spin" style="font-size: 32px; margin-bottom: 10px;"></i><p>Đang tải danh mục từ DramaWave...</p></div>`;
+        allDramas = [];
+        if (paginationContainer) paginationContainer.innerHTML = '';
+
+        // Bước 1: Tải trang đầu tiên bằng API index để lấy thông tin các module và phim ban đầu
+        const indexUrl = `/dm-api/homepage/v2/tab/index?next=&position_index=10&tab_key=${activeTabKey}`;
+        const indexRes = await callApi(indexUrl);
+        
+        let moduleKey = "";
+        let feedNextCursor = "";
+        let feedHasMore = false;
+
+        if (indexRes.code === 200 && indexRes.data) {
+            const items = indexRes.data.items || [];
+            
+            // Tìm module có kiểu recommend/hoặc có Key/module_key để phân trang feed tiếp theo
+            const recommendModule = items.find(m => m.type === 'recommend' || m.module_key);
+            if (recommendModule) {
+                moduleKey = recommendModule.module_key || recommendModule.key || "";
+                if (recommendModule.page_info) {
+                    feedNextCursor = recommendModule.page_info.next || "";
+                    feedHasMore = !!recommendModule.page_info.has_more;
                 }
-            } catch (_) {
-                allDramas = [];
             }
-        }
-        
-        // Nếu không có cache hoặc bắt buộc refresh
-        if (allDramas.length === 0 || forceRefresh) {
-            dramaListContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: var(--text-secondary);"><i class="fa-solid fa-spinner fa-spin" style="font-size: 32px; margin-bottom: 10px;"></i><p>Đang đồng bộ danh mục từ DramaWave...</p></div>`;
-            if (forceRefresh) {
-                allDramas = [];
+            
+            if (!feedNextCursor && indexRes.data.page_info) {
+                feedNextCursor = indexRes.data.page_info.next || "";
+                feedHasMore = !!indexRes.data.page_info.has_more;
             }
-        }
 
-        homepageNextCursor = "";
-        homepageHasMore = true;
-        
-        // Tải trước 8 trang đầu để xây dựng thư viện phim ban đầu thật đầy đủ
-        let pagesToLoad = 8;
-        while (pagesToLoad > 0 && homepageHasMore) {
-            await fetchHomepagePage();
-            pagesToLoad--;
-        }
-        
-        // Sắp xếp Alphabetical theo bảng chữ cái tiếng Việt để giữ cố định vị trí phim
-        allDramas.sort((a, b) => a.name.localeCompare(b.name, 'vi'));
-        
-        // Lưu cache riêng cho tab hiện tại
-        localStorage.setItem(cacheKey, JSON.stringify(allDramas));
-        
-        renderDramas(allDramas);
-    } catch (e) {
-        if (allDramas.length === 0) {
-            dramaListContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--accent-red);">Lỗi kết nối server: ${e.message}</div>`;
-        } else {
-            showToast("Không thể tải thêm danh sách phim mới: " + e.message);
-        }
-    }
-}
-
-// Hàm fetch một trang phim của DramaWave theo tab hiện tại
-async function fetchHomepagePage() {
-    try {
-        const url = `/dm-api/homepage/v2/tab/index?next=${encodeURIComponent(homepageNextCursor)}&position_index=10&tab_key=${activeTabKey}`;
-        const data = await callApi(url);
-        if (data.code === 200 && data.data) {
-            const items = data.data.items || [];
+            // Đọc các phim trong trang index đầu tiên
             items.forEach(module => {
                 if (module.items && Array.isArray(module.items)) {
                     module.items.forEach(d => {
@@ -575,30 +550,84 @@ async function fetchHomepagePage() {
                     });
                 }
             });
-            
-            const pageInfo = data.data.page_info;
-            if (pageInfo) {
-                homepageNextCursor = pageInfo.next || "";
-                homepageHasMore = !!pageInfo.has_more;
-            } else {
-                homepageHasMore = false;
-            }
-        } else {
-            homepageHasMore = false;
         }
+
+        // Bước 2: Tải các trang tiếp theo sử dụng API POST /tab/feed để lấy đầy đủ danh sách phim
+        let pagesToLoad = 12; // Nạp 12 trang để lấy được thật đầy đủ phim
+        
+        while (pagesToLoad > 0 && feedHasMore && moduleKey) {
+            try {
+                const feedRes = await callApi('/dm-api/homepage/v2/tab/feed', 'POST', {
+                    module_key: moduleKey,
+                    next: feedNextCursor
+                });
+
+                if (feedRes.code === 200 && feedRes.data) {
+                    const feedItems = feedRes.data.items || feedRes.data.list || [];
+                    feedItems.forEach(d => {
+                        const dramaId = d.key || d.id;
+                        const dramaTitle = d.title || d.name;
+                        if (dramaId && dramaTitle && d.cover) {
+                            if (!allDramas.some(existing => existing.id === dramaId)) {
+                                allDramas.push({
+                                    id: dramaId,
+                                    name: dramaTitle,
+                                    cover: d.cover,
+                                    update_count: d.update_count || d.episode_count || 0,
+                                    tags: d.tag || d.tags || []
+                                });
+                            }
+                        }
+                    });
+
+                    if (feedRes.data.page_info) {
+                        feedNextCursor = feedRes.data.page_info.next || "";
+                        feedHasMore = !!feedRes.data.page_info.has_more;
+                    } else {
+                        feedHasMore = false;
+                    }
+                } else {
+                    feedHasMore = false;
+                }
+            } catch (err) {
+                console.error("Lỗi khi tải trang feed:", err);
+                feedHasMore = false;
+            }
+            pagesToLoad--;
+            // Chờ 150ms tránh spam API
+            await new Promise(resolve => setTimeout(resolve, 150));
+        }
+
+        // Sắp xếp Alphabetical theo bảng chữ cái tiếng Việt để giữ cố định vị trí phim
+        allDramas.sort((a, b) => a.name.localeCompare(b.name, 'vi'));
+        
+        // Khởi tạo phân trang
+        currentFilteredDramas = allDramas;
+        currentPage = 1;
+        renderDramasPage(1);
     } catch (e) {
-        homepageHasMore = false;
-        throw e;
+        dramaListContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--accent-red);">Lỗi kết nối server: ${e.message}</div>`;
+        if (paginationContainer) paginationContainer.innerHTML = '';
     }
 }
 
-function renderDramas(list) {
-    if (list.length === 0) {
+function renderDramasPage(page) {
+    if (!currentFilteredDramas || currentFilteredDramas.length === 0) {
         dramaListContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary);">Không tìm thấy phim phù hợp.</div>`;
+        if (paginationContainer) paginationContainer.innerHTML = '';
         return;
     }
 
-    let html = list.map(d => `
+    const totalPages = Math.ceil(currentFilteredDramas.length / itemsPerPage);
+    currentPage = Math.min(Math.max(1, page), totalPages);
+
+    // Cắt mảng hiển thị trang hiện tại
+    const startIdx = (currentPage - 1) * itemsPerPage;
+    const endIdx = startIdx + itemsPerPage;
+    const pageItems = currentFilteredDramas.slice(startIdx, endIdx);
+
+    // Render danh sách phim
+    let html = pageItems.map(d => `
         <div class="drama-card" onclick="navigateToDrama('${d.id}')">
             <img src="${d.cover}" alt="${d.name}">
             <div class="drama-card-info">
@@ -607,8 +636,52 @@ function renderDramas(list) {
             </div>
         </div>
     `).join('');
-
     dramaListContainer.innerHTML = html;
+
+    // Render các nút chuyển trang
+    renderPaginationControls(totalPages);
+}
+
+function renderPaginationControls(totalPages) {
+    if (!paginationContainer) return;
+    if (totalPages <= 1) {
+        paginationContainer.innerHTML = '';
+        return;
+    }
+
+    let html = '';
+    
+    // Nút Trang Trước
+    html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})"><i class="fa-solid fa-chevron-left"></i> Trước</button>`;
+
+    // Nút các trang số
+    const maxVisiblePages = 5;
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+    
+    if (endPage - startPage < maxVisiblePages - 1) {
+        startPage = Math.max(1, endPage - maxVisiblePages + 1);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+    }
+
+    // Nút Trang Sau
+    html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">Sau <i class="fa-solid fa-chevron-right"></i></button>`;
+
+    paginationContainer.innerHTML = html;
+}
+
+function changePage(page) {
+    currentPage = page;
+    renderDramasPage(currentPage);
+    
+    // Cuộn nhẹ màn hình lên đầu panel thư viện
+    const searchPanel = document.querySelector('.panel');
+    if (searchPanel) {
+        searchPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 function navigateToDrama(seriesId) {
@@ -619,11 +692,12 @@ function navigateToDrama(seriesId) {
 function searchDramas() {
     const keyword = inputSearch.value.trim().toLowerCase();
     if (!keyword) {
-        renderDramas(allDramas);
-        return;
+        currentFilteredDramas = allDramas;
+    } else {
+        currentFilteredDramas = allDramas.filter(d => d.name.toLowerCase().includes(keyword));
     }
-    const filtered = allDramas.filter(d => d.name.toLowerCase().includes(keyword));
-    renderDramas(filtered);
+    currentPage = 1;
+    renderDramasPage(1);
 }
 
 // --------------------------------------------------
@@ -748,7 +822,7 @@ function showDramaLibrary() {
     episodesPanel.style.display = 'none';
     document.querySelector('.search-container').style.display = 'flex';
     dramaListContainer.style.display = 'grid';
-    renderDramas(allDramas);
+    renderDramasPage(currentPage);
 }
 
 function renderEpisodes(episodes) {

@@ -331,6 +331,47 @@ header h1 span {
 
 
 
+/* Pagination styling */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.page-btn {
+    background: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+    color: var(--text-primary);
+    border-color: var(--accent-purple);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.page-btn.active {
+    background: var(--accent-neon);
+    color: #000;
+    border-color: var(--accent-neon);
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(57, 211, 83, 0.2);
+}
+
+.page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
 /* Drama list grid */
 .drama-list {
     display: grid;
